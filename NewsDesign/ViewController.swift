@@ -8,9 +8,37 @@
 
 import UIKit
 
-class ViewController: UIViewController {
 
+
+class ViewController: UIViewController , UICollectionViewDataSource, UICollectionViewDelegate{
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return collectionCells.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let nib = UINib(nibName: "MyCollectionViewCell", bundle: nil)
+        myCollection.register(nib, forCellWithReuseIdentifier: "collectionCell")
+        let cell : MyCollectionViewCell = myCollection.dequeueReusableCell(withReuseIdentifier: "collectionCell", for: indexPath) as! MyCollectionViewCell
+        cell.cellImage.image = collectionCells[indexPath.row].image
+        cell.cellImage.contentMode = .scaleAspectFill
+        cell.cellLabel.text = collectionCells[indexPath.row].label
+        cell.cellIndex.text = collectionCells[indexPath.row].index
+        return cell
+    }
+    
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+//        return myCollection.contentSize
+////        return CGSize(width: 100.0, height: 100.0)
+//    }
+    
+
+    @IBOutlet weak var myCollection: UICollectionView!
     @IBOutlet weak var profileImage: UIImageView!
+    var collectionCells : [Cell] = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -21,8 +49,26 @@ class ViewController: UIViewController {
         profileImage.layer.borderColor = UIColor.white.cgColor
         profileImage.layer.cornerRadius = profileImage.frame.size.width / 2
         profileImage.clipsToBounds = true
+        myCollection.dataSource = self
+        myCollection.delegate = self
+        let width = myCollection.frame.width
+        let height = myCollection.frame.height
+        let layout = myCollection.collectionViewLayout as! UICollectionViewFlowLayout
+        layout.itemSize = CGSize(width: width, height: height)
+     
+        
+        for i in 0...4{
+            let cell = Cell(image: UIImage(named: "c\(i)")!, label: "lorem kjnbsdjknvs;jnsdfjknsfg jkngf", index: "\(i+1)/5")
+            collectionCells.append(cell)
+        }
+        
     }
 
+    struct Cell {
+        var image : UIImage
+        var label : String
+        var index : String
+    }
 
     /*
     // MARK: - Navigation

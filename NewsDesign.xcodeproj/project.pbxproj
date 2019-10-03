@@ -14,6 +14,8 @@
 		CE0910152344A766005FF24F /* NewsDesignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0910142344A766005FF24F /* NewsDesignUITests.swift */; };
 		CE0910242344AE66005FF24F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0910222344AE66005FF24F /* ViewController.swift */; };
 		CE0910252344AE66005FF24F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0910232344AE66005FF24F /* ViewController.xib */; };
+		CE35C8592346414F00EED048 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35C8572346414F00EED048 /* MyCollectionViewCell.swift */; };
+		CE35C85A2346414F00EED048 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE35C8582346414F00EED048 /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		CE0910162344A767005FF24F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0910222344AE66005FF24F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE0910232344AE66005FF24F /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		CE35C8572346414F00EED048 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
+		CE35C8582346414F00EED048 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				CE0910002344A766005FF24F /* Info.plist */,
 				CE0910222344AE66005FF24F /* ViewController.swift */,
 				CE0910232344AE66005FF24F /* ViewController.xib */,
+				CE35C8572346414F00EED048 /* MyCollectionViewCell.swift */,
+				CE35C8582346414F00EED048 /* MyCollectionViewCell.xib */,
 			);
 			path = NewsDesign;
 			sourceTree = "<group>";
@@ -231,6 +237,7 @@
 			files = (
 				CE090FFF2344A766005FF24F /* LaunchScreen.storyboard in Resources */,
 				CE090FFC2344A766005FF24F /* Assets.xcassets in Resources */,
+				CE35C85A2346414F00EED048 /* MyCollectionViewCell.xib in Resources */,
 				CE0910252344AE66005FF24F /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +265,7 @@
 			files = (
 				CE0910242344AE66005FF24F /* ViewController.swift in Sources */,
 				CE090FF52344A764005FF24F /* AppDelegate.swift in Sources */,
+				CE35C8592346414F00EED048 /* MyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="NewsDesign" customModuleProvider="target">
             <connections>
+                <outlet property="myCollection" destination="qhS-dN-UAt" id="GB2-Cp-PBt"/>
                 <outlet property="profileImage" destination="F3v-Cd-Eaq" id="kDF-PH-vpE"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -208,7 +209,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="210" id="tHP-BF-oIb"/>
                                     </constraints>
-                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MP8-Ss-We7">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MP8-Ss-We7">
                                         <size key="itemSize" width="50" height="50"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>

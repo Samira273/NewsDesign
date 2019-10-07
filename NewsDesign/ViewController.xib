@@ -26,7 +26,7 @@
                     <rect key="frame" x="0.0" y="20" width="375" height="2069"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dr3-Ju-HjH">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="2069"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="2078"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lلوريم ايبسومأميتأدايبا يسكينج " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fvb-Qf-Yxv">
                                     <rect key="frame" x="25" y="30" width="333" height="18"/>
@@ -222,14 +222,14 @@
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="jkO-pG-Uhc">
-                                    <rect key="frame" x="8" y="1775" width="359" height="191"/>
-                                    <mutableString key="text">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" textAlignment="right" translatesAutoresizingMaskIntoConstraints="NO" id="jkO-pG-Uhc">
+                                    <rect key="frame" x="8" y="1775" width="359" height="200"/>
+                                    <string key="text">لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
 أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
 أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
 أيوتي أريري دولار إن ريبريهينديرأيت فوليوبتاتي فيلايت أيسسي كايلليوم دولار أيو فيجايت
 نيولا باراياتيور. أيكسسيبتيور ساينت أوككايكات كيوبايداتات نون بروايدينت ,سيونت ان كيولبا
-كيو أوفايست لابوريوم.</mutableString>
+كيو أوفايست لابوريوم.</string>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -280,10 +280,10 @@
                                 <constraint firstItem="heo-Lx-B7Y" firstAttribute="leading" secondItem="dr3-Ju-HjH" secondAttribute="leading" id="bob-Xa-dII"/>
                                 <constraint firstAttribute="trailing" secondItem="ufv-L8-AXw" secondAttribute="trailing" constant="8" id="btH-Uj-2TH"/>
                                 <constraint firstAttribute="trailing" secondItem="9LA-OR-KzX" secondAttribute="trailing" id="czm-7W-CfW"/>
-                                <constraint firstAttribute="bottom" secondItem="jkO-pG-Uhc" secondAttribute="bottom" constant="103" id="gF4-0u-pCr"/>
                                 <constraint firstItem="9LA-OR-KzX" firstAttribute="leading" secondItem="dr3-Ju-HjH" secondAttribute="leading" id="gIF-JQ-BAN"/>
                                 <constraint firstItem="Dc6-ky-fD8" firstAttribute="leading" secondItem="dr3-Ju-HjH" secondAttribute="leading" id="hel-Dh-TB5"/>
                                 <constraint firstItem="9LA-OR-KzX" firstAttribute="top" secondItem="heo-Lx-B7Y" secondAttribute="bottom" id="iWl-Cg-3E9"/>
+                                <constraint firstAttribute="bottom" secondItem="jkO-pG-Uhc" secondAttribute="bottom" constant="103" id="ivb-4h-Qme"/>
                                 <constraint firstItem="enI-kb-iRj" firstAttribute="top" secondItem="ufv-L8-AXw" secondAttribute="bottom" constant="20" id="jzn-9I-qR1"/>
                                 <constraint firstAttribute="trailing" secondItem="heo-Lx-B7Y" secondAttribute="trailing" id="k8s-SP-uOV"/>
                                 <constraint firstItem="heo-Lx-B7Y" firstAttribute="top" secondItem="IKE-0n-wdt" secondAttribute="bottom" constant="15" id="m73-b0-00U"/>

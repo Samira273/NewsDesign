@@ -28,12 +28,18 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
         return cell
     }
     
-//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-//        return myCollection.contentSize
-////        return CGSize(width: 100.0, height: 100.0)
-//    }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+      
+        let imagesPagerViewController = ImagesPagerViewController()
+        imagesPagerViewController.setPagesNo(pNo: collectionCells.count)
+        imagesPagerViewController.setSelectedPage(p: indexPath.row)
+        self.navigationController?.pushViewController(imagesPagerViewController, animated: true)
+        
+    }
 
+    
+    
     @IBOutlet weak var myCollection: UICollectionView!
     @IBOutlet weak var profileImage: UIImageView!
     var collectionCells : [Cell] = []
@@ -41,7 +47,7 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
         profileImage.layer.borderWidth = 1.0
@@ -55,29 +61,29 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
         let height = myCollection.frame.height
         let layout = myCollection.collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: width, height: height)
-     
-        
         for i in 0...4{
             let cell = Cell(image: UIImage(named: "c\(i)")!, label: "lorem kjnbsdjknvs;jnsdfjknsfg jkngf", index: "\(i+1)/5")
             collectionCells.append(cell)
         }
         
     }
-
-    struct Cell {
-        var image : UIImage
-        var label : String
-        var index : String
-    }
-
+    
+    
+    
     /*
-    // MARK: - Navigation
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+struct Cell {
+    var image : UIImage
+    var label : String
+    var index : String
 }

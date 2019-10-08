@@ -14,6 +14,9 @@
 		CE0910152344A766005FF24F /* NewsDesignUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0910142344A766005FF24F /* NewsDesignUITests.swift */; };
 		CE0910242344AE66005FF24F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0910222344AE66005FF24F /* ViewController.swift */; };
 		CE0910252344AE66005FF24F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE0910232344AE66005FF24F /* ViewController.xib */; };
+		CE175C9F234C938C00F4CF66 /* ImagesPagerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE175C9E234C938C00F4CF66 /* ImagesPagerViewController.swift */; };
+		CE175CA2234C99F000F4CF66 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE175CA0234C99F000F4CF66 /* ContentViewController.swift */; };
+		CE175CA3234C99F000F4CF66 /* ContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE175CA1234C99F000F4CF66 /* ContentViewController.xib */; };
 		CE35C8592346414F00EED048 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE35C8572346414F00EED048 /* MyCollectionViewCell.swift */; };
 		CE35C85A2346414F00EED048 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE35C8582346414F00EED048 /* MyCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
@@ -49,6 +52,9 @@
 		CE0910162344A767005FF24F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE0910222344AE66005FF24F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CE0910232344AE66005FF24F /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		CE175C9E234C938C00F4CF66 /* ImagesPagerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesPagerViewController.swift; sourceTree = "<group>"; };
+		CE175CA0234C99F000F4CF66 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		CE175CA1234C99F000F4CF66 /* ContentViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentViewController.xib; sourceTree = "<group>"; };
 		CE35C8572346414F00EED048 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		CE35C8582346414F00EED048 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -109,6 +115,9 @@
 				CE0910232344AE66005FF24F /* ViewController.xib */,
 				CE35C8572346414F00EED048 /* MyCollectionViewCell.swift */,
 				CE35C8582346414F00EED048 /* MyCollectionViewCell.xib */,
+				CE175C9E234C938C00F4CF66 /* ImagesPagerViewController.swift */,
+				CE175CA0234C99F000F4CF66 /* ContentViewController.swift */,
+				CE175CA1234C99F000F4CF66 /* ContentViewController.xib */,
 			);
 			path = NewsDesign;
 			sourceTree = "<group>";
@@ -237,6 +246,7 @@
 			files = (
 				CE090FFF2344A766005FF24F /* LaunchScreen.storyboard in Resources */,
 				CE090FFC2344A766005FF24F /* Assets.xcassets in Resources */,
+				CE175CA3234C99F000F4CF66 /* ContentViewController.xib in Resources */,
 				CE35C85A2346414F00EED048 /* MyCollectionViewCell.xib in Resources */,
 				CE0910252344AE66005FF24F /* ViewController.xib in Resources */,
 			);
@@ -265,6 +275,8 @@
 			files = (
 				CE0910242344AE66005FF24F /* ViewController.swift in Sources */,
 				CE090FF52344A764005FF24F /* AppDelegate.swift in Sources */,
+				CE175C9F234C938C00F4CF66 /* ImagesPagerViewController.swift in Sources */,
+				CE175CA2234C99F000F4CF66 /* ContentViewController.swift in Sources */,
 				CE35C8592346414F00EED048 /* MyCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

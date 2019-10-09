@@ -64,6 +64,7 @@ class ImagesPagerViewController: UIViewController, UIPageViewControllerDataSourc
         //                NSLayoutConstraint.constraintsWithVisualFormat("V:|-30-[pg]-[btn]-15-|", options: .AlignAllCenterX, metrics: [:], views: views)
         //        )
         // self.pageViewController.didMove(toParent: self)
+        
     }
     func restartAction() {
         self.pageViewController.setViewControllers([self.viewControllerAtIndex(index: selectedPage ?? 0)], direction: .forward, animated: true, completion: nil)

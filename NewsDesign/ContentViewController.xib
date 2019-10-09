@@ -12,7 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContentViewController" customModule="NewsDesign" customModuleProvider="target">
             <connections>
-                <outlet property="myImage" destination="Dvv-LB-24Z" id="kYe-qd-b0w"/>
+                <outlet property="myImage" destination="nEh-gu-WXX" id="smO-Fc-gNZ"/>
+                <outlet property="myScroll" destination="xZY-tY-v4y" id="cpb-hp-hds"/>
+                <outlet property="myScrollView" destination="xZY-tY-v4y" id="I8z-aw-jE6"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,18 +23,35 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dvv-LB-24Z">
-                    <rect key="frame" x="30" y="74" width="354" height="758"/>
-                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xZY-tY-v4y">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nEh-gu-WXX">
+                            <rect key="frame" x="8" y="0.0" width="398" height="818"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="nEh-gu-WXX" firstAttribute="centerY" secondItem="xZY-tY-v4y" secondAttribute="centerY" id="4b3-oD-wyQ"/>
+                        <constraint firstItem="nEh-gu-WXX" firstAttribute="leading" secondItem="xZY-tY-v4y" secondAttribute="leading" constant="8" id="9de-D7-bEh"/>
+                        <constraint firstItem="nEh-gu-WXX" firstAttribute="top" secondItem="xZY-tY-v4y" secondAttribute="top" id="Ruq-Ev-BXN"/>
+                        <constraint firstAttribute="bottom" secondItem="nEh-gu-WXX" secondAttribute="bottom" id="feD-IW-r9g"/>
+                        <constraint firstAttribute="trailing" secondItem="nEh-gu-WXX" secondAttribute="trailing" id="ppk-La-bve"/>
+                        <constraint firstItem="nEh-gu-WXX" firstAttribute="centerX" secondItem="xZY-tY-v4y" secondAttribute="centerX" id="tUa-kq-bTQ"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="delegate" destination="i5M-Pr-FkT" id="z22-7W-QPu"/>
+                    </connections>
+                </scrollView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dvv-LB-24Z" secondAttribute="trailing" constant="30" id="WLj-9P-3XM"/>
-                <constraint firstItem="Dvv-LB-24Z" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="pAS-PS-Wye"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Dvv-LB-24Z" secondAttribute="bottom" constant="30" id="st8-Yh-tPD"/>
-                <constraint firstItem="Dvv-LB-24Z" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="zwb-A2-gWL"/>
+                <constraint firstItem="xZY-tY-v4y" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="CO4-jh-Rl4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="xZY-tY-v4y" secondAttribute="trailing" id="DA9-jE-pMC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="xZY-tY-v4y" secondAttribute="bottom" id="XqG-oq-VCb"/>
+                <constraint firstItem="xZY-tY-v4y" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="dV5-4F-aWt"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="47.826086956521742" y="52.901785714285715"/>
         </view>
     </objects>
 </document>

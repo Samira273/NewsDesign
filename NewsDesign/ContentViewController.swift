@@ -8,8 +8,10 @@
 
 import UIKit
 
-class ContentViewController: UIViewController {
+class ContentViewController: UIViewController , UIScrollViewDelegate{
 
+    @IBOutlet weak var myScroll: UIScrollView!
+    @IBOutlet weak var myScrollView: UIScrollView!
     @IBOutlet weak var myImage: UIImageView!
      var myPage : Page?
     
@@ -19,9 +21,15 @@ class ContentViewController: UIViewController {
         if let p = myPage{
             myImage.image = UIImage(named: p.imageName)
         }
+        myScrollView.delegate = self
+        myScrollView.minimumZoomScale = 1.0
+        myScrollView.maximumZoomScale = 10.0
+    }
+    func viewForZooming(in scrollView: UIScrollView) -> UIView? {
+        return myImage
     }
 
-
+   
     /*
     // MARK: - Navigation
 
